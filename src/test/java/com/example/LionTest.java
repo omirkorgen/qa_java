@@ -36,7 +36,8 @@ public class LionTest {
 
     @Test
     public void testInvalidSexThrowsException() {
-        Exception exception = assertThrows(Exception.class, () -> {
+        Exception exception = assertThrows(Exception.class, () ->
+        {
             new Lion("Некорректное значение", new Feline());
         });
         String expectedMessage = "Используйте допустимые значения пола животного - самец или самка";

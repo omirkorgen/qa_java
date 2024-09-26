@@ -30,7 +30,7 @@ public class FelineTest {
     }
 
     @Test
-    public void testGetKittens() throws Exception {
+    public void testGetKittens(){
         feline.getKittens();
         Mockito.verify(feline, Mockito.times(1)).getKittens(1);
     }
